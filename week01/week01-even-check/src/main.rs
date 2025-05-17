@@ -102,6 +102,6 @@ fn main() {
     //         min = *n;
     //     }
     // }
-    // println!("มากสุด{}", max);
+    // println!("มากสุดดดดดดดด{}", max);
     // println!("น้อยสุด{}", min);
 }
