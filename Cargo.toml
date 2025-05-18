@@ -1,2 +1,2 @@
 [workspace]
-members = [ "week01/week01-if-condition-speed", "week02/week02-print-name-age", "week02/week02-while-loop-counter", "week01/week01-even-check", "week02/week02-basic-functions", "week02/week02-struct-function",]
+members = [ "week01/week01-if-condition-speed", "week02/week02-print-name-age", "week02/week02-while-loop-counter", "week01/week01-even-check", "week02/week02-struct-function",]
