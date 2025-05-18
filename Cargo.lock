@@ -19,5 +19,9 @@ name = "week02-struct-function"
 version = "0.1.0"
 
 [[package]]
+name = "week02-struct-function-practice"
+version = "0.1.0"
+
+[[package]]
 name = "week02-while-loop-counter"
 version = "0.1.0"
