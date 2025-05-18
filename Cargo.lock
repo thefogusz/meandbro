@@ -11,11 +11,15 @@ name = "week01-if-condition-speed"
 version = "0.1.0"
 
 [[package]]
-name = "week02-basic-functions"
+name = "week02-gus03"
 version = "0.1.0"
 
 [[package]]
 name = "week02-print-name-age"
+version = "0.1.0"
+
+[[package]]
+name = "week02-struct-function"
 version = "0.1.0"
 
 [[package]]
