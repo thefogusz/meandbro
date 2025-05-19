@@ -448,3 +448,49 @@
 //         self.minutes >= 5
 //     }
 // }
+// struct Cars {
+//     license_plate: String,
+//     hours_parked: u32,
+//     is_electric: bool
+// }
+
+// impl Cars {
+//     fn  fee(&self) -> u32 {
+//         if self.is_electric {
+//            self.hours_parked * 10
+//         }
+//         else {
+//             self.hours_parked *20
+//         }
+//     }
+//     fn  is_long_term(&self) -> bool {
+//         self.hours_parked >= 24
+//     }
+// }
+// fn main () {
+//     let cars = vec![
+//         Cars {   license_plate: "ABC123".to_string(),
+//                  hours_parked: 24,
+//                  is_electric: false },
+//         Cars {   license_plate: "XYZ999".to_string(),
+//                  hours_parked: 9,
+//                  is_electric: true },
+//         Cars {   license_plate: "QWE456".to_string(),
+//                  hours_parked: 30,
+//                  is_electric: true },
+//         Cars {   license_plate: "MNO888".to_string(),
+//                  hours_parked: 4,
+//                  is_electric: false },
+//         Cars {   license_plate: "ELEC999".to_string(),
+//                  hours_parked: 10,
+//                  is_electric: true }];
+
+//     for car in cars {
+//         println!("ทะเบียน {}: ค่าจอด {} บาท {}", 
+//         car.license_plate,
+//         car.fee(),
+//             if car.is_long_term() { " (จอดค้างคืน)" } else { "" }
+//         );
+//     }
+// }
+
