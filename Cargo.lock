@@ -11,6 +11,10 @@ name = "week01-if-condition-speed"
 version = "0.1.0"
 
 [[package]]
+name = "week02-Homework"
+version = "0.1.0"
+
+[[package]]
 name = "week02-print-name-age"
 version = "0.1.0"
 
