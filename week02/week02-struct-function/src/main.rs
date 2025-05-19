@@ -168,3 +168,283 @@
 //     book.summary();
 // }
 // -------------------------9-------------------------
+
+// fn main () {
+//     let a = 10;
+//     println!("{}", a);
+//     {
+//     let b = a;
+//     println!("{}", b);
+
+//     }
+// }
+// --------------------------10---------------------------
+// #[derive(Debug)]
+
+// struct Bank {
+//     account: String,
+//     balance: u32
+// }
+// impl Bank {
+//     fn rich(&self) -> bool {
+//     self.balance >= 10000
+//     }
+// }
+// fn main () {
+//     let bank = Bank {
+//     account: "กัส".to_string(),
+//     balance: 12000
+//     };
+//     // println!("{} , {} , {}", bank.account,bank.balance, bank.rich()); 
+
+//     let other_bank = &bank;
+//     println!("{:#?}", other_bank);
+//     println!("{:#?}", bank);
+// }
+// // -----------------------------11----------------------------
+// struct Songs {
+//     title: String,
+//     artist: String,
+//     minutes: u32
+// }
+
+// impl Songs {
+//     fn is_long(&self) -> bool {
+//         self.minutes >= 5
+//     }
+// }
+
+// fn main() {
+//     let songs = vec![
+//             Songs {   
+//                 title: "Bohemian Rhapsody".to_string(),
+//                 artist: "Queen".to_string(),
+//                 minutes: 6 
+//             }, 
+//             Songs {   
+//                 title: "Bad Guy".to_string(),
+//                 artist: "Billie Eilish".to_string(),
+//                 minutes: 3 
+//             },
+//             Songs {   
+//                 title: "Stairway to Heaven".to_string(),
+//                 artist: "Led Zeppelin".to_string(),
+//                 minutes: 8 
+//             }, 
+//             Songs {   
+//                 title: "Blinding Lights".to_string(),
+//                 artist: "The Weeknd".to_string(),
+//                 minutes: 4 
+//             },
+//             Songs {   
+//                 title: "November Rain".to_string(),
+//                 artist: "Guns N' Roses".to_string(),
+//                 minutes: 9 
+//             }];
+//     for song in &songs {
+//         println!("ชื่อเพลง: {} ชื่อศิลปิน: {} ความยาวเพลง: {} นาที {} ", 
+//         song.title,
+//         song.artist, 
+//         song.minutes,
+//         if song.is_long() {"เพลงยาว"} else {""}
+//     );
+
+//  }
+
+// }
+
+// struct Restaurants {
+//     name: String,
+//     food_type: String,
+//     time_visited: u32
+// }
+
+// impl Restaurants {
+//     fn is_favorite(&self) -> bool {
+//         self.time_visited > 5
+//     }
+// }
+
+// fn main() {
+//     let restaurants = vec![
+//         Restaurants {
+//             name: "Shabu Indy".to_string(),
+//             food_type: "ชาบู".to_string(),
+//             time_visited: 12
+//         },
+//         Restaurants {
+//             name: "แม่อ้อยตามสั่ง".to_string(),
+//             food_type: "อาหารไทย".to_string(),
+//             time_visited: 3
+//         },
+//         Restaurants {
+//             name: "Sushi Masa".to_string(),
+//             food_type: "ญี่ปุ่น".to_string(),
+//             time_visited: 8
+//         },
+//         Restaurants {
+//             name: "KFC".to_string(),
+//             food_type: "ฟาสต์ฟู้ด".to_string(),
+//             time_visited: 2
+//         },
+//         Restaurants {
+//             name: "หมูกระทะลุงโหน่ง".to_string(),
+//             food_type: "หมูกระทะ".to_string(),
+//             time_visited: 9
+//         }];
+
+//     for restaurant in &restaurants {
+//         println!("{} ({}) {}",
+//         restaurant.name,
+//         restaurant.food_type,
+//         if restaurant.is_favorite() {"★ ร้านโปรด"} else {"ธรรมดา"});
+//     } 
+// }
+
+
+// struct Movies {
+//     title: String,
+//     genre: String,
+//     rating: u32
+// }
+
+// impl Movies {
+//     fn is_masterpiece(&self) -> bool {
+//         self.rating >= 90
+//     }
+// }
+
+// fn main() {
+//         let movies = vec![
+//             Movies {
+//             title: "Interstellar".to_string(),
+//             genre: "Sci-Fi".to_string(),
+//             rating: 95
+//             },
+//             Movies {
+//             title: "Twilight".to_string(),
+//             genre: "Romance".to_string(),
+//             rating: 61
+//             },
+//             Movies {
+//             title: "The Godfather	".to_string(),
+//             genre: "Crime".to_string(),
+//             rating: 98
+//             },
+//             Movies {
+//             title: "Fast & Furious 9".to_string(),
+//             genre: "Action".to_string(),
+//             rating: 55
+//             },
+//             Movies {
+//             title: "La La Land".to_string(),
+//             genre: "Musical".to_string(),
+//             rating: 91
+//             }];
+//         for movie in movies  {
+//             println!("{} {} {}",movie.title, movie.genre, 
+//         if movie.is_masterpiece() {"★ ยอดเยี่ยม"} else {"ธรรมดา"});
+//     }
+// }
+
+// struct  Celsius {
+//     degree: f64
+// }
+// impl Celsius {
+//     fn to_fahrenheit(&self) -> f64 {
+//         (self.degree * 1.8) + 32.0 
+//     }
+// }
+// fn main() {
+//     let celsius = Celsius {
+//         degree: 60.0
+//     };
+//     println!("{}°C = {}°F", celsius.degree, celsius.to_fahrenheit());
+// }// struct Student {
+//     name: String,
+//     score: u32
+// }
+// impl Student {
+//     fn grade(&self) -> &str {
+//         if self.score >=80 {
+//             "เกรด A"
+//         }
+//         else if self.score >= 60 && self.score <80 {
+//             "เกรด B"
+//         }
+//         else {
+//             "เกรด F"
+//         }
+//     }
+// }
+// fn main() {
+// let student = vec![
+//     Student {
+//         name: "กัส".to_string(),
+//         score: 52,
+//     },
+//     Student {
+//         name: "ฮอร์น".to_string(),
+//         score: 89,
+//     },
+//     Student {
+//         name: "โอเว่น".to_string(),
+//         score: 65,
+//     },
+//   ];
+// for student in &student {
+//     println!("{}: {}", student.name, student.grade());}
+    
+// }
+
+// -------------------------1----------------------------
+
+// struct Game {
+//     title: String,
+//     genre: String,
+//     hours_played: u32
+// }
+// impl Game {
+//     fn is_favorite(&self) -> bool {
+//     self.hours_played >= 100    
+//     }
+// }
+// fn main () {
+//     let game = vec![
+//     Game {
+//         title: "Poe2".to_string(),
+//         genre: "Action RPG".to_string(),
+//         hours_played: 295
+//     },
+//     Game {
+//         title: "Valorant".to_string(),
+//         genre: "FPS Shooter".to_string(),
+//         hours_played: 700
+//     },
+//     Game {
+//         title: "CS2".to_string(),
+//         genre: "FPS Shooter".to_string(),
+//         hours_played: 599
+//     }];
+//     for game in &game {
+//         if game.is_favorite() {
+//             println!("{} ({}): ★ เกมโปรด", game.title, game.genre);
+//         }
+//         else {
+//             println!("{} ({}): ธรรมดา", game.title, game.genre);
+//         }
+//     }
+    
+// }
+// ---------------------------2-------------------------------------
+
+// struct Song {
+//     title: String,
+//     artist: String,
+//     minutes: u32
+// }
+// impl Song {
+//     fn is_long(&self) -> bool {
+//         self.minutes >= 5
+//     }
+// }
