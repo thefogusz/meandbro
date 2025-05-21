@@ -548,3 +548,40 @@
 //             println!("{} {} ", device.name, device.status())
 //         }
 // }
+
+
+// struct Animal {
+//     name: String,
+//     leg_count: u32
+// }
+
+// impl Animal {
+//         fn is_insect(&self) -> bool {
+//            self.leg_count == 6
+//         }
+// }
+
+// fn main() {
+//         let animals = vec![
+//         Animal {
+//         name: "ant".to_string(),
+//         leg_count: 6    
+//         },
+//         Animal {
+//         name: "cat".to_string(),
+//         leg_count: 4    
+//         },
+//         Animal {
+//         name: "chicken".to_string(),
+//         leg_count: 2    
+//         },
+//         Animal {
+//         name: "spider".to_string(),
+//         leg_count: 8    
+//         }];
+//             for animal in animals {
+//                 println!("{} {} ", animal.name, 
+//             if animal.is_insect() {("✅ แมลง")} else {("❌ ไม่ใช่แมลง")}
+//         )
+//     }
+// }
