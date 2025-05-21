@@ -494,3 +494,28 @@
 //     }
 // }
 
+struct Batteries {
+    name: String,
+    battery_percent: f64,
+    charging: bool
+}
+impl Batteries {
+    fn status(&self) -> String {
+        if self.battery_percent <20.0 && !self.charging {
+            "! ใกล็หมด".to_string()
+        }
+        else if self.charging {
+            "กำลังใช้งาน".to_string()
+        }
+        else if self.battery_percent > 80.0 && !self.charging {
+            "พร้อมใช้งาน".to_string()
+        }
+        else {
+            "".to_string()
+        }
+    }
+}
+
+fn main() {
+    
+}
