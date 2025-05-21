@@ -493,29 +493,58 @@
 //         );
 //     }
 // }
+//---------------------------3-------------------------------------
+// struct Devices {
+//     name: String,
+//     battery_percent: f64,
+//     charging: bool
+// }
+// impl Devices {
+//     fn status(&self) -> String {
+//         if self.battery_percent <20.0 && !self.charging {
+//             "! ใกล็หมด".to_string()
+//         }
+//         else if self.charging {
+//             "กำลังใช้งาน".to_string()
+//         }
+//         else if self.battery_percent > 80.0 && !self.charging {
+//             "พร้อมใช้งาน".to_string()
+//         }
+//         else {
+//             "".to_string()
+//         }
+//     }
+// }
+// ---------------------------4-------------------------------------
 
-struct Batteries {
-    name: String,
-    battery_percent: f64,
-    charging: bool
-}
-impl Batteries {
-    fn status(&self) -> String {
-        if self.battery_percent <20.0 && !self.charging {
-            "! ใกล็หมด".to_string()
-        }
-        else if self.charging {
-            "กำลังใช้งาน".to_string()
-        }
-        else if self.battery_percent > 80.0 && !self.charging {
-            "พร้อมใช้งาน".to_string()
-        }
-        else {
-            "".to_string()
-        }
-    }
-}
-
-fn main() {
-    
-}
+// fn main() {
+//         let devices = vec![
+//             Devices {
+//             name: "Iphone13".to_string(),
+//             battery_percent: 15.0,
+//             charging: false
+//         },
+//             Devices {
+//             name: "MacBook Air".to_string(),
+//             battery_percent: 82.5,
+//             charging: false
+//         },
+//             Devices {
+//             name: "Galaxy Tab S7".to_string(),
+//             battery_percent: 50.0,
+//             charging: true
+//         },
+//             Devices {
+//             name: "AirPods Pro".to_string(),
+//             battery_percent: 12.5,
+//             charging: false
+//         },
+//         Devices {
+//             name: "Pad Mini".to_string(),
+//             battery_percent: 100.0,
+//             charging: true
+//         }];
+//         for device in devices {
+//             println!("{} {} ", device.name, device.status())
+//         }
+// }
